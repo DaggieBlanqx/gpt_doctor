@@ -45,9 +45,7 @@ const main = async ({ port }) => {
 
   app.use('*', (_req, res) => res.status(400).send('Invalid route. Please check your URL and try again.'))
 
-  app.listen(port, () => {
-    console.log(`App running on port ${port}`)
-  })
+  app.listen(port, () => console.log(`App running on port ${port}`))
 }
 
 main({
