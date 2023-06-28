@@ -47,7 +47,7 @@ const ask = (symptom) => {
         resolve({ status: 'success', message: response.data.choices[0].message.content })
       })
       .catch((error) => {
-      // console.log(error)
+      // console.error(error)
       // reject(error)
         resolve({ status: 'error', message: error })
       })
