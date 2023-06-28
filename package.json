@@ -1,0 +1,34 @@
+{
+  "name": "gpt_doctor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "standard": "npx standard --verbose | snazzy",
+    "standard:fix": "npx standard --fix",
+    "ngrokit": "ngrok http 8152",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.0",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "homepage": "https://github.com/daggieblanqx/gpt_doctor#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daggieblanqx/gpt_doctor.git"
+  },
+  "author": "Daggie Douglas Mwangi"
+}
