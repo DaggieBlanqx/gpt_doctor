@@ -4,12 +4,10 @@
 
 // import ask from './utils/openai.js'
 
-
 require('dotenv')
-const express = require('express');
-const cors = require('cors');
+const express = require('express')
+const cors = require('cors')
 const ask = require('./utils/openai.js')
-
 
 const main = async ({ port }) => {
   const app = express()

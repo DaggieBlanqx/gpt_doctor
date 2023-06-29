@@ -1,5 +1,5 @@
 // import axios from 'axios'
-const axios = require*('axios');
+const axios = require * ('axios')
 
 const GPT3_API_KEY = process.env.OA_API_KEY
 
