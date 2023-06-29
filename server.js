@@ -1,8 +1,15 @@
-import 'dotenv/config'
-import express from 'express'
-import cors from 'cors'
+// import 'dotenv/config'
+// import express from 'express'
+// import cors from 'cors'
 
-import ask from './utils/openai.js'
+// import ask from './utils/openai.js'
+
+
+require('dotenv')
+const express = require('express');
+const cors = require('cors');
+const ask = require('./utils/openai.js')
+
 
 const main = async ({ port }) => {
   const app = express()

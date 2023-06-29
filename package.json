@@ -2,8 +2,7 @@
   "name": "gpt_doctor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "standard": "npx standard --verbose | snazzy",
@@ -15,13 +14,14 @@
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.0",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pm2": "^5.3.0"
   },
   "devDependencies": {
     "husky": "^8.0.0",
+    "nodemon": "^2.0.15",
     "snazzy": "^9.0.0",
-    "standard": "^17.1.0",
-    "nodemon": "^2.0.15"
+    "standard": "^17.1.0"
   },
   "keywords": [],
   "license": "ISC",

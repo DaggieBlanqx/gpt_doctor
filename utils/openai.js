@@ -1,4 +1,5 @@
-import axios from 'axios'
+// import axios from 'axios'
+const axios = require*('axios');
 
 const GPT3_API_KEY = process.env.OA_API_KEY
 
@@ -54,4 +55,6 @@ const ask = (symptom) => {
   })
 }
 
-export default ask
+// export default ask
+
+module.exports = ask
