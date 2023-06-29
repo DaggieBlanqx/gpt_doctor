@@ -1,5 +1,4 @@
-// import axios from 'axios'
-const axios = require * ('axios')
+import axios from 'axios'
 
 const GPT3_API_KEY = process.env.OA_API_KEY
 
@@ -48,13 +47,10 @@ const ask = (symptom) => {
         resolve({ status: 'success', message: response.data.choices[0].message.content })
       })
       .catch((error) => {
-      // console.error(error)
-      // reject(error)
+        console.error(error)
         resolve({ status: 'error', message: error })
       })
   })
 }
 
-// export default ask
-
-module.exports = ask
+export default ask

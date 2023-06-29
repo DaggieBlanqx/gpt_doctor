@@ -1,13 +1,8 @@
-// import 'dotenv/config'
-// import express from 'express'
-// import cors from 'cors'
+import 'dotenv/config'
+import express from 'express'
+import cors from 'cors'
 
-// import ask from './utils/openai.js'
-
-require('dotenv')
-const express = require('express')
-const cors = require('cors')
-const ask = require('./utils/openai.js')
+import ask from './utils/openai.js'
 
 const main = async ({ port }) => {
   const app = express()
@@ -35,6 +30,7 @@ const main = async ({ port }) => {
       const input = symptoms[symptoms.length - 1].split('#')[0]
 
       const outcome = await ask(input)
+      
       if (outcome.status === 'success') {
         response = `END ${outcome.message}`
       } else {
